@@ -18,8 +18,6 @@ def breached_password(password):
     else:
         print("\nPassword has not been breached")
 
-
-
 def breached_account(email):
     url = "https://haveibeenpwned.com/api/v2/breachedaccount/"
     r = requests.get(url + email + "?truncateResponse=true", headers=headers)
